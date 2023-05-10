@@ -47,9 +47,6 @@ function elegiProducto(){
 
 }
 
-function elegisteWhiskys
-
-let
 let nombre;
 let edad;
 let producto;
