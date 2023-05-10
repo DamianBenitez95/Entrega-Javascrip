@@ -1,40 +1,61 @@
-function solicitarNombre() {
-    nombre = prompt("Ingrese su nombre")
-    console.log(`El nombre del usuario es: ${nombre}`)
-    alert(
-        "Bienvenido " + nombre + "!"
-    )
+function solicitarNombre(){
+    let nombre = true
+    while(isNaN(nombre) != true){
+        nombre = prompt("Ingrese su nombre ");
+        if(isNaN(nombre)){
+            alert ("Bienvenido " + nombre + "!")
+            return nombre
+        }
+        else{
+            alert("Por favor ingrese su nombre")
+        }
+    }
 }
+
+
+
+
+
 
 function edadIngreso(){
-    edad = prompt("Ingrese edad")
-    if(edad >= 18){
-            console.log(`Acceso concedido`)
-            alert("Bienvenido a nuestro sitio!")
-        }else {
-            console.log(`Acceso denegado`)
-            alert("No puede ingresar a nuestro sitio")
+    while(isNaN(edad) || edad <18){
+        edad = parseInt(prompt("Ingrese su edad "));
+        if(edad >=18){
+            alert("Bienvenido!")
+            return edad
         }
-
-    
-    }
-
-
-
-function elegiProducto() {
-    producto = prompt( "Nuestros productos: \ 1: Vasos; \ 2: Jhonnie Walker Red ")
-
-    if (producto === "1") {
-        alert("Se agrego Vasos a tu carrito")
-    } else if (producto === "2"){
-        alert("Se agrego Jhonnie Walker Red a tu carrito")
+        else if(edad < 18){
+            alert("Debes ser mayor de edad");
+        }
     }
 }
 
+function elegiProducto(){
+    producto = prompt( ` Que esta buscando?
+    1: Whiskys
+    2: Vasos
+    3: Accesorios
+    `)
 
-let producto;  
+    if( producto === "1"){
+        alert ("Elegiste whiskys")
+    }else if (producto === "2"){
+        alert ("Elegiste Vasos")
+    }else if (producto === "3"){
+        alert ("Elegiste Accesorios")
+    }
+
+}
+
+function elegisteWhiskys
+
+let
 let nombre;
 let edad;
+let producto;
 solicitarNombre()
 edadIngreso()
 elegiProducto()
+
+
+
