@@ -16,7 +16,6 @@ function solicitarNombre(){
 
 
 
-
 function edadIngreso(){
     while(isNaN(edad) || edad <18){
         edad = parseInt(prompt("Ingrese su edad "));
@@ -37,12 +36,22 @@ function elegiProducto(){
     3: Accesorios
     `)
 
-    if( producto === "1"){
-        alert ("Elegiste whiskys")
-    }else if (producto === "2"){
-        alert ("Elegiste Vasos")
-    }else if (producto === "3"){
-        alert ("Elegiste Accesorios")
+    switch (producto) {
+        case "1":
+            alert("Elegiste Whiskys")
+            
+            break;
+        case "2":
+            alert("Elegiste Vasos")
+            
+            break;
+        case "3":
+            alert("Elegiste Accesorios")
+                
+            break;
+        default:
+            alert("Ninguna opcion válida")
+            break;
     }
 
 }
