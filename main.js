@@ -1,6 +1,6 @@
 function solicitarNombre(){
     let nombre = true
-    while(isNaN(nombre) != true){
+    while(nombre != Number){
         nombre = prompt("Ingrese su nombre ");
         if(isNaN(nombre)){
             alert ("Bienvenido " + nombre + "!")
@@ -17,8 +17,9 @@ function solicitarNombre(){
 
 
 function edadIngreso(){
-    while(isNaN(edad) || edad <18){
+        while(edad != Number || edad <18){
         edad = parseInt(prompt("Ingrese su edad "));
+        
         if(edad >=18){
             alert("Bienvenido!")
             return edad
