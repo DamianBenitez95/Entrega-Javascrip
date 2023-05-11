@@ -17,7 +17,7 @@ function solicitarNombre(){
 
 
 function edadIngreso(){
-        while(edad != Number || edad <18){
+        while(edad = Number || edad < 18){
         edad = parseInt(prompt("Ingrese su edad "));
         
         if(edad >=18){
